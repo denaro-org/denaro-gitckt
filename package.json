@@ -16,8 +16,8 @@
     "lint": "eslint --ext mjs,js,ts,tsx,cjs --fix .",
     "prepare": "husky install"
   },
-  "lint-staged":{
-    "**/*.{mjs,js,ts,tsx,cjs}":[ 
+  "lint-staged": {
+    "**/*.{mjs,js,ts,tsx,cjs}": [
       "npm run lint --fix"
     ]
   },
@@ -41,6 +41,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2"
   }
 }
