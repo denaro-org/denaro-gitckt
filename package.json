@@ -10,7 +10,12 @@
     "url": "git+ssh://git@github.com/denaro-org/denaro-gitckt.git"
   },
   "keywords": [
-    "gitckt"
+    "gitckt",
+    "denaro",
+    "denaro-gitckt",
+    "gitckt-clone",
+    "git",
+    "clone"
   ],
   "scripts": {
     "lint": "eslint --ext mjs,js,ts,tsx,cjs --fix .",
