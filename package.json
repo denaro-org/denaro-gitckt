@@ -1,0 +1,46 @@
+{
+  "name": "denaro-gitckt",
+  "version": "1.0.0",
+  "description": "从一个 git 仓库拉取指定分支指定目录的快捷脚本",
+  "bin": {
+    "gitckt": "./bin/gitckt.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/denaro-org/denaro-gitckt.git"
+  },
+  "keywords": [
+    "gitckt"
+  ],
+  "scripts": {
+    "lint": "eslint --ext mjs,js,ts,tsx,cjs --fix .",
+    "prepare": "husky install"
+  },
+  "lint-staged":{
+    "**/*.{mjs,js,ts,tsx,cjs}":[ 
+      "npm run lint --fix"
+    ]
+  },
+  "author": "vxhly <pengchengou@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denaro-org/denaro-gitckt/issues"
+  },
+  "homepage": "https://github.com/denaro-org/denaro-gitckt#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "child_process": "^1.0.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^9.2.12",
+    "log-symbols": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.0"
+  }
+}
