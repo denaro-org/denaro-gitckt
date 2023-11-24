@@ -28,7 +28,7 @@ gitckt
 ### 命令行参数形式
 
 ```bash
-gitckt clone <url> [savePath] -b <branch> -d <dir> 
+gitckt clone <url> [savePath] -b <branch> -d <dir>
 ```
 
 ## 帮助命令

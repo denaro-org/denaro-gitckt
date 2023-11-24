@@ -15,7 +15,9 @@ export const cloneAction = (url, savePath, args) => {
 
       try {
         // git clone
-        execSync(`git clone ${url} ${savePath} -b ${branch || 'master'}`, { stdio: 'inherit' })
+        execSync(`git clone ${url} ${savePath} -b ${branch || 'master'}`, {
+          stdio: 'inherit'
+        })
       } catch (e) {
         throw new Error(e)
       } finally {

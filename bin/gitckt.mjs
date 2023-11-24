@@ -14,8 +14,7 @@ program
   .usage('<command> [options]')
 
 // 没有 clone 命令时, 采用终端交互形式
-program
-  .action(() => inquirerCloneAction())
+program.action(() => inquirerCloneAction())
 
 // 终端参数克隆
 program
@@ -30,11 +29,14 @@ program
   .action((url, savePath, args) => cloneAction(url, savePath, args))
 
 // 展示帮助信息
-program
-  .on('--help', () => {
-    console.log()
-    console.log(`  Run ${chalk.cyan('gitckt <command> --help')} for detailed usage of given command.`)
-    console.log()
-  })
+program.on('--help', () => {
+  console.log()
+  console.log(
+    `  Run ${chalk.cyan(
+      'gitckt <command> --help'
+    )} for detailed usage of given command.`
+  )
+  console.log()
+})
 
 program.parse(process.argv)

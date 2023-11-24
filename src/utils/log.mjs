@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 import symbols from 'log-symbols'
 
-export const log = (options) => {
+export const log = options => {
   const {
     type = 'info', // 状态
     message, // 输出信息
